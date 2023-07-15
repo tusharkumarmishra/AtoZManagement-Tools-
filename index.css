@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .navbar-brand{
+    display: flex;
+  }
+  
+  body {
+    width: 100vw;
+    max-height: 100vh !important;
+  
+  }
+  h1{
+    font-size: 35px;
+    margin-left: 30px;
+    margin-top: 15px;
+  
+  }
+  .navbar-brand{
+    margin-left: 20px;
+  }
+  
+    
+  .mb-4{
+    height: 15px;
+    position:absolute ;
+    right: 120px;
+  }
+  
+  .nav-link{
+   position: absolute;
+    font-size: 28px;
+   right: 30px;
+    
+  }
+  
+  img {
+    border-radius: 30px;
+  }
+  
+  .alphabet {
+    max-width: 100%;
+  }
+  
+  .job-container {
+    width: 100%;
+    display: flex;
+    height: calc(100% - 177px);
+  }
+  
+  .leftSide {
+    width: 25%;
+    min-height: 100%;
+  
+  }
+  
+  #filterList {
+    margin-left: 10px;
+    column-count: 6;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+  
+  #filterList>li {
+    border: 1px solid black;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    color: rgb(8, 8, 250);
+    list-style: none;
+    font-size: 29px;
+    background-color: skyblue;
+    margin: 3px;
+    transition: 0.1s linear;
+  }
+  #filterList>li:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+  }
+  .fa-share:hover{
+  color: red;
+  }
+  
+  
+  p {
+    margin-top: 20px;
+    font-size: larger;
+    margin-left: 20px;
+  }
+  button.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    margin-left: 40px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button.btn-secondary:hover {
+    background-color: #eb0e0e;
+  }
+  
+  
+  
+  
+  /* Right Side */
+  
+  .rightSide {
+  
+    background-color:rgb(212, 226, 227);
+    width: 75%;
+  }
+  
+  
+  
+  #JobList {
+  
+    height: calc(100% - 59px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    overflow-y: scroll;
+  }
+  
+  .listItemBox {
+    padding: 0px 15px 0px 5px;
+    width: 50%;
+    max-width: 345px;
+    margin-bottom: 20px;
+    height: 184px;
+    background-color: rgb(251, 247, 247);
+    border-radius: 8px;
+  
+  }
+  .listItemBox:hover{
+    color: blueviolet;
+  
+    
+   }
+  
+  .companyDetail {
+  
+    height: calc(100% - 20px);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 20px;
+    width: 80px;
+  }
+  
+  .logo>img {
+  
+    background-size: contain;
+  }
+  
+  .detail {
+  
+    padding-top: 20px;
+    padding-right: 6px;
+  }
+  .detail:hover{
+    zoom: 1.1;
+  }
+  
+  
+  
+  .viewsLike {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+  }
+  .shareContainer{
+    display: none;
+    justify-content:end;
+    height: 20px;
+  }
+  .blue{
+    color:red;
+  }
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+    
+   

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Bootstrap </title>
+        <link rel="stylesheet" href="layout1.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Merriweather&display=swap"
+            rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+
+    </head>
+
+    <body onload="onScreenLoad()" style="background-color:      #e2dea9 ;">
+
+
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <a class="navbar-brand" href="https://www.mindtimemoney.com/">
+                <img src="https://as2.ftcdn.net/v2/jpg/03/01/07/79/1000_F_301077936_nMvQWsQOWmce23PPxcN7qHepnRk3x4Mb.jpg"
+                    width="70" height="70" class="d-inline-block align-top" alt="Logo">
+                <h1>AtoZ Management Tools</h1>
+            </a>
+
+
+           
+           
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                   
+                    <!-- Facebook -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"
+                        role="button"><i class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #3b80b5;" href="#!"
+                        role="button"><i class="fab fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+                        role="button"><i class="fab fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+                        role="button"><i class="fab fa-instagram"></i></a>
+                    </section>
+            <a class="nav-link" href="https://www.mindtimemoney.com/" id="navbarDropdown" role="button">
+            <i class="fas fa-user"></i>
+            </a>
+        
+           
+          
+        </nav>
+
+
+
+        <header class="bg-white text-light p-3" style="height: 8vh;">
+            <div class="container-fluid">
+                <div class="row align-items-center text-dark">
+                    <div class="col-md-3">
+                        <h2>Find Tools</h2>
+
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="d-flex flex-wrap" id="search-container">
+                            <input type="text" class="form-control me-2 all-site"
+                                oninput="filterObjectsByName(this.value)" id="search" placeholder="Search...."
+                                style="max-width: 50vh; width: 100%;">
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <select onchange="filterdata(this.value)" style="width: 50vh;">
+
+                                <option value="0">--Category--</option>
+                                <option value="1">It</option>
+                                <option value="2">Coding</option>
+                                <option value="3">Marketing</option>
+                                <option value="4">Productivity</option>
+                                <option value="5">Education Business</option>
+                                <option value="6">Communication</option>
+                                <option value="7">Project Management</option>
+                                <option value="8">Customer Relationship Management (CRM)</option>
+                                <option value="9">Human Resources</option>
+                                <option value="10">Financial Management</option>
+                                <option value="11">Collaboration</option>
+                                <option value="12">Storing</option>
+                                <option value="13">Sharing Documents</option>
+                                <option value="14">TrackingTasks</option>
+                                <option value="15">Science</option>
+                                <option value="16"> Engineering</option>
+                                <option value="17">Medicine</option>
+                                <option value="18">Arts</option>
+                                <option value="19">Envoirment</option>
+                                <option value="20">Law</option>
+                                <option value="21">Entertainment</option>
+                                <option value="22">Agriculture</option>
+                                <option value="23">Hospitality</option>
+                                <option value="24"> Philanthropy</option>
+                                <option value="25">Design</option>
+
+
+                            </select>
+
+                            &nbsp; &nbsp;
+                            <!-- <button class="btn btn-danger" type="button" style="width: 20vh;">Find Tools</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="job-container" style="background: #eaedec;">
+            <div class="leftSide">
+                <div class="leftSideUp">
+
+                    <p> <i class="fa fa-search "></i> &nbsp; Refine your search</p>
+                    <p>Search by:</p>
+                </div>
+                <div class="alphabet d-flex">
+
+                    <ul id="filterList">
+                        <li onClick="FillThePage('A')">A</li>
+                        <li onClick="FillThePage('B')">B</li>
+                        <li onClick="FillThePage('C')">C</li>
+                        <li onClick="FillThePage('D')">D</li>
+                        <li onClick="FillThePage('E')">E</li>
+                        <li onClick="FillThePage('F')">F</li>
+                        <li onClick="FillThePage('G')">G</li>
+                        <li onClick="FillThePage('H')">H</li>
+                        <li onClick="FillThePage('I')">I</li>
+                        <li onClick="FillThePage('J')">J</li>
+                        <li onClick="FillThePage('K')">K</li>
+                        <li onClick="FillThePage('L')">L</li>
+                        <li onClick="FillThePage('M')">M</li>
+                        <li onClick="FillThePage('N')">N</li>
+                        <li onClick="FillThePage('O')">O</li>
+                        <li onClick="FillThePage('P')">P</li>
+                        <li onClick="FillThePage('Q')">Q</li>
+                        <li onClick="FillThePage('R')">R</li>
+                        <li onClick="FillThePage('S')">S</li>
+                        <li onClick="FillThePage('T')">T</li>
+                        <li onClick="FillThePage('U')">U</li>
+                        <li onClick="FillThePage('V')">V</li>
+                        <li onClick="FillThePage('W')">W</li>
+                        <li onClick="FillThePage('X')">X</li>
+                        <li onClick="FillThePage('Y')">Y</li>
+                        <li onClick="FillThePage('Z')">Z</li>
+                    </ul>
+
+                </div>
+                <button class="btn-secondary" onclick="resetBtnHandle()" type="button">Reset</button>
+            </div>
+
+
+            <!-- This is my right side -->
+
+            <div class="rightSide">
+                <div class="rightSideHeading">
+                    <h6 class="head p-4">Displaying 20 of 130 vehicle results</h6>
+                </div>
+                <div id="JobList">
+                   
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+            </script>
+        <script src="data.js"></script>
+        <script src="index.js"></script>
+        <script src="ButtonFunction.js"></script>
+     
+
+    </body>
+
+</html>
